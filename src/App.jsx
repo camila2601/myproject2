@@ -20,8 +20,8 @@ function App() {
 
   <Routes>
     <Route path="/" element={
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', justifyContent: 'center', alignItems: 'flex-start', padding: '2rem' }}>
-        <div style={{ flex: 1, minWidth: 320, maxWidth: 600 }}>
+      <div className="main-center-container">
+        <div className="home-section">
           <Home />
         </div>
         <ProfileCard
