@@ -1,0 +1,101 @@
+/* Centra todo en pantalla */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Tarjeta */
+.card {
+  width: 320px;
+  background: white;
+  border-radius: 20px; /* Bordes redondos */
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1); /* Sombra */
+  transition: 0.3s;
+}
+
+/* Efecto hover */
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Imagen */
+.card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Contenedor imagen */
+.image-container {
+  position: relative;
+}
+
+/* Botón like */
+.like-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Cuando está liked */
+.like-btn.liked {
+  background: #ff4d6d;
+  color: white;
+}
+
+/* Contenido */
+.card-content {
+  padding: 20px;
+}
+
+/* Nombre */
+.name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Check verde */
+.verified {
+  color: green;
+}
+
+/* Texto descripción */
+.description {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Estadísticas */
+.stats {
+  display: flex;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+/* Botón follow */
+.follow-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  background: #eee;
+}
+
+/* Cuando está siguiendo */
+.following {
+  background: black;
+  color: white;
+}
